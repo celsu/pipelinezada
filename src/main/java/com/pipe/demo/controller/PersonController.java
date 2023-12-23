@@ -13,6 +13,7 @@ public class PersonController {
     @Autowired
     private PersonService service;
 
+    //endpoint
     @RequestMapping(value="/names/{name}/{name2}", method= RequestMethod.GET)
     public String getFullName(@PathVariable("name") String name,
                       @PathVariable("name2") String name2) throws Exception {
